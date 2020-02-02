@@ -39,12 +39,3 @@ const checkOrderName = () => {
 document.getElementById('pizzabot').onclick = function () {
   greeting();
 }
-
-
-
-
-
-
-
-
-
