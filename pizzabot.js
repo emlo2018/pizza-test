@@ -17,14 +17,14 @@ const greeting = () => {
 const checkOrderName = () => {
   let orderName = prompt(`Enter the name of the pizza you want to order today`)
 
-  if (orderName === "Vegetarian Pizza" || orderName === "Hawaiian Pizza" || orderName === "Pepperoni Pizza") {
+  if (orderName == hawaiian || orderName == vegetarian || orderName == pepperoni) {
 
     let orderQuantity = Number(prompt(`Enter the number of ${orderName} you want to order today`))
     let sum = orderQuantity * pizzaPrice
 
-    if (orderQuantity >= 1 && orderQuantity <= 2) {
+    if (orderQuantity < 3) {
       document.getElementById("order").innerHTML = `You ordered ${orderQuantity}  ${orderName} , this will take 10 minutes and it will cost ${sum}`
-    } else if (orderQuantity >= 3 && orderQuantity <= 5) {
+    } else if (orderQuantity < 6) {
       document.getElementById("order").innerHTML = `You ordered ${orderQuantity}  ${orderName} , this will take 15 minutes and it will cost ${sum}`
     } else {
       document.getElementById("order").innerHTML = `You ordered ${orderQuantity}  ${orderName} , this will take 20 minutes and it will cost ${sum}`
