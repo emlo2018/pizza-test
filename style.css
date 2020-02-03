@@ -1,3 +1,66 @@
-* {
-  margin-top: 0px;
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #570404;
+  background-image: linear-gradient(315deg, #a40606 0%, #ebe3dc 74%, rgb(5, 82, 35));
+}
+
+h1 {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+}
+
+header {
+  background-image: url("https://houston.cbslocal.com/wp-content/uploads/sites/15909877/2016/04/the-healthiest-pizza-options.jpg?w=625.jpg");
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+}
+
+.form-order {
+  background-color: #f8f6f448;
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-order input {
+  margin: 10px;
+  width: 200px;
+}
+
+.form-order delivery {
+  margin: 0px;
+  width: 20%;
+}
+
+order {
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+border-radius: 2px;
+width: fit-content;
+
+}
+
+
+
+
+
+
+

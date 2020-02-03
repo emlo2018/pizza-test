@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Project Pizzabot</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Very much Pizza</h1>
-    </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Project Pizzabot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Pizza</h1>
+  </header>
+  
   <main>
+
+    <form class="form-order" action="https://httpbin.org/anything" method="post">
+
+      <div>
+        <label name="name">
+          <input type="text" value="Name" name="name" required>
+        </label></div>
+
+      <label name="adress">
+        <input type="text" value="Adress" name="name" required>
+      </label></div>
+
+      <container class="delivery">
+        <label>Pick up at vechicle
+          <input type="radio" name="delivery" value="Vehicle">
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <label>Deliver to door
+          <input type="radio" name="delivery" value="Door" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </container>
+
+      <div>
+        <label>
+          <input type="checkbox" checked="checked" required>
+          <span class="checkmark"></span>
+          <h5>I agree to the <a href="#"> Terms and Conditions </a></h5>
+        </label>
+      </div>
+      <button id="button" type="submit">Confirm</button>
+    </form>
 
     <button id="pizzabot">Start making Your order here</button>
 
     <div id="order"></div>
   </main>
-    <script src="pizzabot.js"></script>
-  </body>
+  <script src="pizzabot.js"></script>
+</body>
+
 </html>
