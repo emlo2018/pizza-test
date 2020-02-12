@@ -10,7 +10,7 @@ body {
   align-content: center;
   flex-direction: column;
   background-color: #570404;
-  background-image: linear-gradient(315deg, #a40606 0%, #ebe3dc 74%, rgb(5, 82, 35));
+  background-color:  #ebe3dc;
 }
 
 h1 {
