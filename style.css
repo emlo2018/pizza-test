@@ -10,7 +10,8 @@ body {
   align-content: center;
   flex-direction: column;
   background-color: #570404;
-  background-color:  #ebe3dc;
+  background-color:  #d8d8d8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -47,15 +48,21 @@ header {
   width: 20%;
 }
 
-order {
+.order {
   font-weight: 400;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {
 border-radius: 2px;
 width: fit-content;
+border: none;
+padding: 10px;
+background-color: rgb(220, 222, 245);
+cursor: pointer;
+}
 
+button:hover {
+  transform: scale(1.2);
 }
 
 

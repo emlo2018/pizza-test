@@ -1,4 +1,4 @@
-const x = 'Vegetarian Pizza'
+const x = 'Vegetarian Pizza' 
 const y = 'Hawaiian Pizza'
 const z = 'Pepperoni Pizza'
 
@@ -6,7 +6,6 @@ const pizzaPrice = 80
 
 let orderName
 let orderQuantity
-//Put your Javscript code here:
 
 
 const greeting = () => {
@@ -15,7 +14,7 @@ const greeting = () => {
 }
 
 const checkOrderName = () => {
-  let orderName = prompt(`Enter the name of the pizza you want to order today`)
+  let orderName = prompt(`Enter the name of the pizza you want to order. We have Pepperoni Pizza, Hawaiian Pizza and Vegetarian Pizza`)
 
   if (orderName == x || orderName == y || orderName == z) {
 
